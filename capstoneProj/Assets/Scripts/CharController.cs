@@ -41,10 +41,12 @@ public class CharController : MonoBehaviour
         Vector3 rightMov = right * moveSpeed * Time.deltaTime * hor;
         Vector3 forwardMov = forward * moveSpeed * Time.deltaTime * ver;
 
-        //Vector3 heading = Vector3.Normalize(rightMov + forwardMov);
-      //  transform.forward = heading;
+        Vector3 heading = Vector3.Normalize(rightMov + forwardMov);
+        transform.forward = heading;
         transform.position += rightMov;
         transform.position += forwardMov;
+        Camera.main.transform.position += rightMov;
+        Camera.main.transform.position += forwardMov;
 
     }
 }

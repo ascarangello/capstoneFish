@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class Rotator : MonoBehaviour
 {
-    [SerializeField]
-    TerrainCollider terrain;
-    [SerializeField]
-    float rotSpeed;
-    private Vector3 centerPos;
+    public float rotSpeed;
     [SerializeField]
     CharController charController;
+    Transform charTrans;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        centerPos = terrain.bounds.center;
+        charTrans = charController.gameObject.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetAxisRaw("RotationKey") != 0.0f) {
-            transform.RotateAround(centerPos, Vector3.up, rotSpeed * Time.deltaTime * Input.GetAxisRaw("RotationKey"));
+        
+        if (Input.GetAxisRaw("RotationKey") != 0.0f) {
+            transform.RotateAround(charTrans.transform.position, Vector3.up, rotSpeed * Time.deltaTime * Input.GetAxisRaw("RotationKey"));
             charController.setMovementVectors();
         }
-
     }
 }
