@@ -11,6 +11,7 @@ public class P1Toggle : MonoBehaviour
     private P1Toggle sibling;
     private Toggle toggle;
     private string lastButton = "";
+    private P1LogicChecker checker;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class P1Toggle : MonoBehaviour
         toggle.onValueChanged.AddListener(delegate {
             updateSelf(this.name);
         });
-
+        checker = GetComponentInParent<P1LogicChecker>();
     }
 
     // Update is called once per frame
@@ -34,6 +35,7 @@ public class P1Toggle : MonoBehaviour
         {
             lastButton = fromName;
             toggle.isOn = !toggle.isOn;
+            Debug.Log(checker.checkWin());
         }
         else
         {
