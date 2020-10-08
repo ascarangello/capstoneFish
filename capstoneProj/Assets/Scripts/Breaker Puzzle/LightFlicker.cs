@@ -5,6 +5,9 @@ using UnityEngine;
 public class LightFlicker : MonoBehaviour
 {
     public Light light;
+    public int min;
+    public int max;
+
     // Start is called before the first frame update
     void Start()
     {
