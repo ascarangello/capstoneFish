@@ -9,11 +9,11 @@ public class CharController : MonoBehaviour
     private float moveSpeed;
 
     private Vector3 forward, right;
+
     // Start is called before the first frame update
     void Start()
     {
         setMovementVectors();
-        
     }
 
     // Update is called once per frame
@@ -22,8 +22,7 @@ public class CharController : MonoBehaviour
         if (Input.GetAxisRaw("HorizontalKey") != 0.0f || Input.GetAxisRaw("VerticalKey") != 0.0f)
         {
             Move();
-        }
-        
+        }        
     }
 
     public void setMovementVectors()
@@ -46,6 +45,8 @@ public class CharController : MonoBehaviour
         transform.forward = heading;
         transform.position += rightMov;
         transform.position += forwardMov;
+        Camera.main.transform.position += rightMov;
+        Camera.main.transform.position += forwardMov;
 
     }
 }
