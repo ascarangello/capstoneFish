@@ -8,11 +8,11 @@ public class CharController : MonoBehaviour
     [SerializeField]
     private float moveSpeed;
 
-    private Vector3 forward, right;
-
+    private Vector3 forward, right, prevPos;
     // Start is called before the first frame update
     void Start()
     {
+        prevPos = transform.position;
         setMovementVectors();
     }
 
@@ -22,6 +22,7 @@ public class CharController : MonoBehaviour
         if (Input.GetAxisRaw("HorizontalKey") != 0.0f || Input.GetAxisRaw("VerticalKey") != 0.0f)
         {
             Move();
+            prevPos = transform.position;
         }        
     }
 
@@ -45,8 +46,7 @@ public class CharController : MonoBehaviour
         transform.forward = heading;
         transform.position += rightMov;
         transform.position += forwardMov;
-        Camera.main.transform.position += rightMov;
-        Camera.main.transform.position += forwardMov;
+        Camera.main.transform.position += transform.position - prevPos;
 
     }
 }
