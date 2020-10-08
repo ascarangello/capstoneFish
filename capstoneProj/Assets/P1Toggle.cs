@@ -8,7 +8,7 @@ public class P1Toggle : MonoBehaviour
     [SerializeField]
     private Color offColor, onColor;
     [SerializeField]
-    private P1Toggle sibling;
+    private List<P1Toggle> sibling;
     private Toggle toggle;
     private string lastButton = "";
     private P1LogicChecker checker;
@@ -21,12 +21,6 @@ public class P1Toggle : MonoBehaviour
             updateSelf(this.name);
         });
         checker = GetComponentInParent<P1LogicChecker>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     
     public void updateSelf(string fromName)
@@ -43,7 +37,11 @@ public class P1Toggle : MonoBehaviour
             changeColor();
             if (lastButton == "")
             {
-                sibling.updateSelf(this.name);
+                foreach(P1Toggle sib in sibling)
+                {
+                    sib.updateSelf(this.name);
+                }
+                    
             }
             lastButton = "";
         }
