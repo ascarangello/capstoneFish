@@ -8,11 +8,13 @@ public class LightFlicker : MonoBehaviour
 
     public float minTime, maxTime;
     public float minIntensity, maxIntensity;
+    private float startIntensity;
 
     // Start is called before the first frame update
     void Start()
     {
         light = this.GetComponent<Light>();
+        startIntensity = light.intensity;
         Restart();
     }
 
@@ -38,10 +40,13 @@ public class LightFlicker : MonoBehaviour
     public void Stop()
     {
         StopAllCoroutines();
+        light.enabled = true;
+        light.intensity = startIntensity;
     }
 
     public void Restart()
     {
+        StopAllCoroutines();
         StartCoroutine(Flicker());
         StartCoroutine(EditIntensity());
     }
