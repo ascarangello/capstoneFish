@@ -27,6 +27,7 @@ public class P1Toggle : MonoBehaviour
     {
         toggle = GetComponent<Toggle>();
         changeColor();
+        CheckFlickering();
         toggle.onValueChanged.AddListener(delegate
         {
             updateSelf(this.name);
@@ -47,6 +48,7 @@ public class P1Toggle : MonoBehaviour
         {
             // Debug.Log("Told to update by: " + fromHash.ToString());
             changeColor();
+            CheckFlickering();
             if (lastButton == "")
             {
                 foreach (P1Toggle sib in sibling)
