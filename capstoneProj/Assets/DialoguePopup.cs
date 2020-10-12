@@ -2,25 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractablePopup : MonoBehaviour
+public class DialoguePopup : MonoBehaviour
 {
-    public GameObject onInteract;
+    public string dialogueOnInteract;
     private PopupManager popup;
+    private DialoguePopupManager dmanager;
     private bool playerPresence;
     public string displayText;
     // Start is called before the first frame update
     void Start()
     {
+        dmanager = GameObject.FindGameObjectWithTag("DPopup").GetComponent<DialoguePopupManager>();
         popup = GameObject.FindGameObjectWithTag("Popup").GetComponent<PopupManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerPresence && !onInteract.activeSelf && Input.GetButtonDown("Interact"))
+        if (playerPresence && Input.GetButtonDown("Interact"))
         {
-            popup.clearText();
-            onInteract.SetActive(true);
+            if (dmanager.visible())
+            {
+                dmanager.hide();
+            }
+            else
+            {
+                popup.clearText();
+                dmanager.setText(dialogueOnInteract);
+                dmanager.show();
+            }
         }
     }
 
@@ -39,9 +49,9 @@ public class InteractablePopup : MonoBehaviour
         {
             playerPresence = false;
             popup.clearText();
-            if (onInteract.activeSelf)
+            if (dmanager.visible())
             {
-                onInteract.SetActive(false);
+                dmanager.hide();
             }
         }
     }

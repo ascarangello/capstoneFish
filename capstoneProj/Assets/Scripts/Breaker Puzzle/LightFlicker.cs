@@ -20,7 +20,7 @@ public class LightFlicker : MonoBehaviour
 
     IEnumerator Flicker()
     {
-        Debug.Log("Flickering");
+
         yield return new WaitForSecondsRealtime(Random.Range(minTime, maxTime));
 
         var random = Random.Range(0, 10);
@@ -32,7 +32,6 @@ public class LightFlicker : MonoBehaviour
 
     IEnumerator EditIntensity()
     {
-        Debug.Log("Edit intensity");
 
         yield return new WaitForSecondsRealtime(Random.Range(minTime, maxTime));
 
@@ -42,7 +41,6 @@ public class LightFlicker : MonoBehaviour
 
     public void Stop()
     {
-        Debug.Log("Stopping flickering");
         StopAllCoroutines();
         light.enabled = true;
         light.intensity = startIntensity;
