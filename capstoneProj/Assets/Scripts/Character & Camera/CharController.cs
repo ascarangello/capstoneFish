@@ -8,6 +8,8 @@ public class CharController : MonoBehaviour
     [SerializeField]
     private float moveSpeed;
 
+    private GameObject inContactWith;
+
     private Vector3 forward, right, prevPos;
     // Start is called before the first frame update
     void Start()

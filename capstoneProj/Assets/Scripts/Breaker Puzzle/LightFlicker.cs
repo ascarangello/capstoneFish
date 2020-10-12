@@ -20,6 +20,7 @@ public class LightFlicker : MonoBehaviour
 
     IEnumerator Flicker()
     {
+
         yield return new WaitForSecondsRealtime(Random.Range(minTime, maxTime));
 
         var random = Random.Range(0, 10);
@@ -31,6 +32,7 @@ public class LightFlicker : MonoBehaviour
 
     IEnumerator EditIntensity()
     {
+
         yield return new WaitForSecondsRealtime(Random.Range(minTime, maxTime));
 
         light.intensity = Random.Range(minIntensity, maxIntensity);
