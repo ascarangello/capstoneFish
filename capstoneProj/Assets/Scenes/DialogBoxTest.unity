@@ -2838,7 +2838,7 @@ GameObject:
   - component: {fileID: 1205641842}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4139,6 +4139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71fb14257b51aa4a9486f19e11e7e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onInteract: {fileID: 578290102}
   displayText: Press Space to interact
 --- !u!114 &1661174199 stripped
 MonoBehaviour:
