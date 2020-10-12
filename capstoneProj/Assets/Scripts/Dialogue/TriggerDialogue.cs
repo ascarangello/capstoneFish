@@ -7,7 +7,7 @@ public class TriggerDialogue : MonoBehaviour
     public bool playerInRange;
     public bool convoInProgress = false;
 
-    public Animator anim;
+    // public Animator anim;
 
     public Dialogue dialogue;
 
@@ -21,7 +21,7 @@ public class TriggerDialogue : MonoBehaviour
             if (Input.GetButtonDown("SelectAction"))
             {
                 //open the text box and start dialogue
-                anim.SetBool("isOpen", true);
+                // anim.SetBool("isOpen", true);
                 dialogue.StartDialogue();
                 convoInProgress = true;
             }
@@ -55,7 +55,7 @@ public class TriggerDialogue : MonoBehaviour
             //Reset convo and close text box
             playerInRange = false;
             convoInProgress = false;
-            anim.SetBool("isOpen", false);
+            // anim.SetBool("isOpen", false);
         }
     }
 }
