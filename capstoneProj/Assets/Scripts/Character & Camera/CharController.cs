@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 // Adapted from https://www.youtube.com/watch?v=XhliRnzJe5g
 public class CharController : MonoBehaviour
 {
@@ -30,6 +31,10 @@ public class CharController : MonoBehaviour
         {
             Debug.Log("Escape hit, quitting");
             Application.Quit();
+        }
+        if (Input.GetKey(KeyCode.R) && dead)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
