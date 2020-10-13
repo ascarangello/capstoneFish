@@ -5474,6 +5474,10 @@ PrefabInstance:
       propertyPath: disableOnWin
       value: 
       objectReference: {fileID: 890712999}
+    - target: {fileID: 7358390004795814503, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: tockSound
+      value: 
+      objectReference: {fileID: 1245452845}
     - target: {fileID: 7358390004882085244, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
       propertyPath: sibling.Array.data[0]
       value: 

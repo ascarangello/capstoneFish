@@ -24,7 +24,7 @@ public class P1CompleteTrigger : MonoBehaviour
     {
         if (p1.checkWin() && other.gameObject.CompareTag("Player") && !puzzledone)
         {
-            Debug.Log("Yo");
+            Debug.Log("Released fish");
             puzzledone = true;
             scaryFish.SetActive(true);
         }

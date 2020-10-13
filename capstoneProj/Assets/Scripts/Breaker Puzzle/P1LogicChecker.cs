@@ -8,7 +8,8 @@ public class P1LogicChecker : MonoBehaviour
     public GameObject disableOnWin;
     public List<Toggle> onToggles;
     public List<Toggle> offToggles;
-    
+    public AudioManager tockSound;
+
     public bool checkWin()
     {
         foreach (Toggle toggle in onToggles)
@@ -26,6 +27,7 @@ public class P1LogicChecker : MonoBehaviour
             }
         }
         disableOnWin.SetActive(false);
+        tockSound.backgroundSource.Stop();
         return true;
     }
 }
