@@ -20,10 +20,11 @@ public class P1CompleteTrigger : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(p1.checkWin() && collision.gameObject.CompareTag("Player") && !puzzledone)
+        if (p1.checkWin() && other.gameObject.CompareTag("Player") && !puzzledone)
         {
+            Debug.Log("Yo");
             puzzledone = true;
             scaryFish.SetActive(true);
         }

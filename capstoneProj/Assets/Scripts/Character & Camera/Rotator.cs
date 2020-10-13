@@ -20,7 +20,7 @@ public class Rotator : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetAxisRaw("RotationKey") != 0.0f) {
+        if (!charController.checkAlive() && Input.GetAxisRaw("RotationKey") != 0.0f) {
             transform.RotateAround(charTrans.transform.position, Vector3.up, rotSpeed * Time.deltaTime * Input.GetAxisRaw("RotationKey"));
             charController.setMovementVectors();
         }

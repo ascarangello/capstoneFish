@@ -7,7 +7,7 @@ public class CharController : MonoBehaviour
 
     [SerializeField]
     private float moveSpeed;
-
+    private bool dead = false;
     private GameObject inContactWith;
 
     private Vector3 forward, right, prevPos;
@@ -21,11 +21,27 @@ public class CharController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxisRaw("HorizontalKey") != 0.0f || Input.GetAxisRaw("VerticalKey") != 0.0f)
+        if (!dead && Input.GetAxisRaw("HorizontalKey") != 0.0f || Input.GetAxisRaw("VerticalKey") != 0.0f)
         {
             Move();
             prevPos = transform.position;
-        }        
+        }
+        if (Input.GetKey("escape"))
+        {
+            Debug.Log("Escape hit, quitting");
+            Application.Quit();
+        }
+    }
+
+    public void killed()
+    {
+        dead = true;
+        moveSpeed = 0;
+    }
+
+    public bool checkAlive()
+    {
+        return dead;
     }
 
     public void setMovementVectors()
@@ -40,7 +56,6 @@ public class CharController : MonoBehaviour
     {
         float hor = Input.GetAxis("HorizontalKey");
         float ver = Input.GetAxis("VerticalKey");
-        Vector3 dir = new Vector3(hor, 0, ver);
         Vector3 rightMov = right * moveSpeed * Time.deltaTime * hor;
         Vector3 forwardMov = forward * moveSpeed * Time.deltaTime * ver;
 

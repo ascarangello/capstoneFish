@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.AI;
 public class P1AngryFishLogic : MonoBehaviour
 {
+    public string onLoseText;
     private Transform player;
     private NavMeshAgent agent;
+    private PopupManager popupText;
     // Start is called before the first frame update
     void Start()
     {
+        popupText = GameObject.FindGameObjectWithTag("Popup").GetComponent<PopupManager>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
     }
@@ -23,7 +26,8 @@ public class P1AngryFishLogic : MonoBehaviour
     {
         if(collision.gameObject.transform == player)
         {
-            Debug.Log("Grr fish eat u u die");
+            popupText.setText(onLoseText);
+            player.GetComponent<CharController>().killed();
         }
         
     }
