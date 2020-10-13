@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class P1LogicChecker : MonoBehaviour
 {
     [SerializeField]
+    public GameObject disableOnWin;
     public List<Toggle> onToggles;
     public List<Toggle> offToggles;
     
@@ -24,6 +25,7 @@ public class P1LogicChecker : MonoBehaviour
                 return false;
             }
         }
+        disableOnWin.SetActive(false);
         return true;
     }
 }
