@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(RandomDelay());
 
-        SFXSource.PlayOneShot(flickerClip, .7f);
+        SFXSource.PlayOneShot(flickerClip, Random.Range(0, .7f));
 
         StartCoroutine(RandomFlicker());
     }
