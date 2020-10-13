@@ -5,9 +5,11 @@ using UnityEngine.UI;
 public class P1LogicChecker : MonoBehaviour
 {
     [SerializeField]
+    public GameObject disableOnWin;
     public List<Toggle> onToggles;
     public List<Toggle> offToggles;
-    
+    public AudioManager tockSound;
+
     public bool checkWin()
     {
         foreach (Toggle toggle in onToggles)
@@ -24,6 +26,8 @@ public class P1LogicChecker : MonoBehaviour
                 return false;
             }
         }
+        disableOnWin.SetActive(false);
+        tockSound.backgroundSource.Stop();
         return true;
     }
 }
