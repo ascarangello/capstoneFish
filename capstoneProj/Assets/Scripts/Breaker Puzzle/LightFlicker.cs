@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class LightFlicker : MonoBehaviour
 {
-    private Light light;
+    private Light lightObject;
 
     public float minTime, maxTime;
     public float minIntensity, maxIntensity;
     private float startIntensity;
 
-    // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
-        light = this.GetComponent<Light>();
-        startIntensity = light.intensity;
+        lightObject = this.GetComponent<Light>();
+        startIntensity = lightObject.intensity;
         Restart();
     }
 
@@ -25,7 +25,7 @@ public class LightFlicker : MonoBehaviour
 
         var random = Random.Range(0, 10);
 
-        light.enabled = !light.enabled;
+        lightObject.enabled = !lightObject.enabled;
 
         StartCoroutine(Flicker());
     }
@@ -35,15 +35,15 @@ public class LightFlicker : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(Random.Range(minTime, maxTime));
 
-        light.intensity = Random.Range(minIntensity, maxIntensity);
+        lightObject.intensity = Random.Range(minIntensity, maxIntensity);
         StartCoroutine(EditIntensity());
     }
 
     public void Stop()
     {
         StopAllCoroutines();
-        light.enabled = true;
-        light.intensity = startIntensity;
+        lightObject.enabled = true;
+        lightObject.intensity = startIntensity;
     }
 
     public void Restart()

@@ -15,12 +15,9 @@ public class Dragger : EventTrigger
         offset = GetComponent<RectTransform>().rect.height / 2;
     }
 
-    public void Update()
+    public void DragObject()
     {
-        if (dragging)
-        {
-            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y - offset);
-        }
+        transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
     }
 
     public override void OnPointerDown(PointerEventData eventData)
