@@ -26,8 +26,9 @@ public class P1LogicChecker : MonoBehaviour
                 return false;
             }
         }
+
         disableOnWin.SetActive(false);
-        tockSound.backgroundSource.Stop();
+        tockSound.StopSounds();
         return true;
     }
 }
