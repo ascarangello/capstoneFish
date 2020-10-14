@@ -1028,8 +1028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: 
-  displayText: Space to observe tank
+  dialogueOnInteract: Where did they all go?
+  displayText: '[SPACE] Observe Tank'
 --- !u!1 &335268502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,8 +1934,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: 
-  displayText: Space to observe tank
+  dialogueOnInteract: There weren't this many fish here before...
+  displayText: '[SPACE] Observe Tank'
 --- !u!114 &787439854 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7358390006183777263, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
@@ -3519,8 +3519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: 
-  displayText: Space to observe tank
+  dialogueOnInteract: Did they always have teeth like that?
+  displayText: '[SPACE] Observe Tank'
 --- !u!1 &1229453633
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,8 +3841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: 
-  displayText: Space to observe tank
+  dialogueOnInteract: What are they hiding from?
+  displayText: '[SPACE] Observe Tank'
 --- !u!1 &1324461279
 GameObject:
   m_ObjectHideFlags: 0
@@ -5164,8 +5164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: 
-  displayText: Space to observe tank
+  dialogueOnInteract: Their eyes keep following me...
+  displayText: '[SPACE] Observe Tank'
 --- !u!1 &1726424255
 GameObject:
   m_ObjectHideFlags: 0
@@ -5397,8 +5397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: 
-  displayText: Space to observe tank
+  dialogueOnInteract: It's too dark...
+  displayText: '[SPACE] Observe Tank'
 --- !u!1001 &1803631366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6438,8 +6438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: '"Wow thats water"'
-  displayText: Space to observe tank
+  dialogueOnInteract: Is that the light making it that color?
+  displayText: '[SPACE] Observe Tank'
 --- !u!65 &1967802795
 BoxCollider:
   m_ObjectHideFlags: 0
