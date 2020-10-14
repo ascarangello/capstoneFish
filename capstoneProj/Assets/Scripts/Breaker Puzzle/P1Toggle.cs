@@ -42,13 +42,14 @@ public class P1Toggle : MonoBehaviour
         {
             lastButton = fromName;
             toggle.isOn = !toggle.isOn;
-            Debug.Log(checker.checkWin());
+            //Debug.Log(checker.checkWin());
         }
         else
         {
             // Debug.Log("Told to update by: " + fromHash.ToString());
             changeColor();
             CheckFlickering();
+            
             if (lastButton == "")
             {
                 foreach (P1Toggle sib in sibling)
@@ -57,6 +58,8 @@ public class P1Toggle : MonoBehaviour
                 }
 
             }
+
+            checker.checkWin();
             lastButton = "";
         }
     }

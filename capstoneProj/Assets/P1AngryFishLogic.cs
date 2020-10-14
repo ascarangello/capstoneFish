@@ -8,6 +8,11 @@ public class P1AngryFishLogic : MonoBehaviour
     private Transform player;
     private NavMeshAgent agent;
     private PopupManager popupText;
+
+    [Header("Fish Sound")]
+    public AudioSource source;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +27,22 @@ public class P1AngryFishLogic : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
+    public IEnumerator PlaySound()
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        source.Play();
+
+        StartCoroutine(PlaySound());
+
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.transform == player)
+        if (collision.gameObject.transform == player)
         {
             popupText.setText(onLoseText);
             player.GetComponent<CharController>().killed();
         }
-        
+
     }
 }

@@ -10,13 +10,13 @@ public class P1CompleteTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -27,6 +27,8 @@ public class P1CompleteTrigger : MonoBehaviour
             Debug.Log("Released fish");
             puzzledone = true;
             scaryFish.SetActive(true);
+
+            StartCoroutine(scaryFish.GetComponent<P1AngryFishLogic>().PlaySound());
         }
     }
 }

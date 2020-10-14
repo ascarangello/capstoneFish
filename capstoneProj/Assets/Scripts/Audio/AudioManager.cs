@@ -30,6 +30,13 @@ public class AudioManager : MonoBehaviour
         return Random.Range(minDelay, maxDelay);
     }
     
+    public void StopSounds()
+    {
+        backgroundSource.Stop();
+        StopAllCoroutines();
+        StartCoroutine(RandomFlicker());
+    }
+    
     //plays on toggle
     public void PlayClickSFX()
     {
