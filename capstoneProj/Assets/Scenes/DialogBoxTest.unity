@@ -5598,6 +5598,66 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349900, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349900, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349900, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349900, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349900, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349900, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349900, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 272
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349900, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349901, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349903, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_Text
+      value: Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349903, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349903, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349903, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349903, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7358390004743349903, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7358390004795814503, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
       propertyPath: disableOnWin
       value: 
