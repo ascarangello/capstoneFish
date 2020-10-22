@@ -5,7 +5,6 @@ using UnityEngine;
 public class DialoguePopup : MonoBehaviour
 {
     public string dialogueOnInteract;
-    private PopupManager popup;
     private DialoguePopupManager dmanager;
     private bool playerPresence;
     public string displayText;
@@ -13,24 +12,14 @@ public class DialoguePopup : MonoBehaviour
     void Start()
     {
         dmanager = GameObject.FindGameObjectWithTag("DPopup").GetComponent<DialoguePopupManager>();
-        popup = GameObject.FindGameObjectWithTag("Popup").GetComponent<PopupManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerPresence && Input.GetButtonDown("Interact"))
+        if (playerPresence && Input.GetButtonDown("Interact") && dmanager.visible())
         {
-            if (dmanager.visible())
-            {
-                dmanager.hide();
-            }
-            else
-            {
-                popup.clearText();
-                dmanager.setText(dialogueOnInteract);
-                dmanager.show();
-            }
+            dmanager.hide();
         }
     }
 
@@ -39,7 +28,8 @@ public class DialoguePopup : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             playerPresence = true;
-            popup.setText(displayText);
+            dmanager.setText(dialogueOnInteract);
+            dmanager.show();
         }
     }
 
@@ -48,7 +38,6 @@ public class DialoguePopup : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             playerPresence = false;
-            popup.clearText();
             if (dmanager.visible())
             {
                 dmanager.hide();
