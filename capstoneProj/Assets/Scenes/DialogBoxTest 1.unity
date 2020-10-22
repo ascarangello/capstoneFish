@@ -982,6 +982,64 @@ Transform:
   m_Father: {fileID: 1700066457}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &402924379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 402924380}
+  - component: {fileID: 402924382}
+  - component: {fileID: 402924381}
+  m_Layer: 0
+  m_Name: DEMOENDTRIGGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &402924380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402924379}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 5.545, y: 1.2, z: -13.22}
+  m_LocalScale: {x: 2.528708, y: 2.6799426, z: 25.71148}
+  m_Children: []
+  m_Father: {fileID: 2006247713}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &402924381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402924379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1141996, y: 1, z: 1.0000004}
+  m_Center: {x: -0.55709934, y: 0, z: -0.000000013008068}
+--- !u!114 &402924382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402924379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueOnInteract: Demo complete, press ESC to quit
 --- !u!1 &451813349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Is that the light making it that color?
-  displayText: '[SPACE] Observe Tank'
 --- !u!65 &548696865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1372,7 +1429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: What are they hiding from?
-  displayText: '[SPACE] Observe Tank'
 --- !u!65 &583512655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2416,6 +2472,8 @@ GameObject:
   - component: {fileID: 890713003}
   - component: {fileID: 890713002}
   - component: {fileID: 890713001}
+  - component: {fileID: 890713004}
+  - component: {fileID: 890713005}
   m_Layer: 0
   m_Name: Locked Door
   m_TagString: Untagged
@@ -2499,6 +2557,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890712999}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &890713004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890712999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueOnInteract: Hmm it doesn't seem to be opening
+--- !u!65 &890713005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890712999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1141996, y: 1, z: 1.0000004}
+  m_Center: {x: -0.55709934, y: 0, z: -0.000000013008068}
 --- !u!1 &906247942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,7 +2862,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Their eyes keep following me...
-  displayText: '[SPACE] Observe Tank'
 --- !u!65 &933428345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2902,7 +2985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: There weren't this many fish here before...
-  displayText: '[SPACE] Observe Tank'
 --- !u!65 &940308915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4786,7 +4868,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Did they always have teeth like that?
-  displayText: '[SPACE] Observe Tank'
 --- !u!65 &1492885561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4910,7 +4991,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: It's too dark...
-  displayText: '[SPACE] Observe Tank'
 --- !u!65 &1519579243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5481,7 +5561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Where did they all go?
-  displayText: '[SPACE] Observe Tank'
 --- !u!65 &1682609629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7006,6 +7085,7 @@ Transform:
   - {fileID: 32451924}
   - {fileID: 2081880774}
   - {fileID: 890713000}
+  - {fileID: 402924380}
   m_Father: {fileID: 1688139677}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}

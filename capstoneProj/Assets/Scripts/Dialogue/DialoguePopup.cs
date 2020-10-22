@@ -7,7 +7,6 @@ public class DialoguePopup : MonoBehaviour
     public string dialogueOnInteract;
     private DialoguePopupManager dmanager;
     private bool playerPresence;
-    public string displayText;
     // Start is called before the first frame update
     void Start()
     {
