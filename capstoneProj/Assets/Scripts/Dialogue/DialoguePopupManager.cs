@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class DialoguePopupManager : MonoBehaviour
 {
-    private Text displayText;
+    public Text displayText;
+    public Text nameText;
     private Queue<DialogueInfo> GlobalDialogue;
+    public Image nameWindow;
     private DialogueInfo currentDialogue;
     private Image background;
     // Start is called before the first frame update
@@ -17,9 +19,10 @@ public class DialoguePopupManager : MonoBehaviour
         if(background.IsActive())
         {
             background.enabled = false;
+            nameWindow.enabled = false;
         }
-        displayText = GetComponentInChildren<Text>();
         displayText.text = "";
+        nameText.text = "";
     }
 
     public void startDialogue(DialogueInfo[] dialogue)
@@ -44,6 +47,7 @@ public class DialoguePopupManager : MonoBehaviour
         {
             currentDialogue = GlobalDialogue.Dequeue();
             currentDialogue.resetInfo();
+            setName(currentDialogue.talking);
             displayDialogue();
         }
     }
@@ -73,6 +77,11 @@ public class DialoguePopupManager : MonoBehaviour
 
     }
 
+    public void setName(string name)
+    {
+        nameText.text = name;
+    }
+
     public void setText(string message)
     {
         displayText.text = message;
@@ -80,11 +89,14 @@ public class DialoguePopupManager : MonoBehaviour
     public void show()
     {
         background.enabled = true;
+        nameWindow.enabled = true;
     }
     public void hide()
     {
         background.enabled = false;
+        nameWindow.enabled = false;
         displayText.text = "";
+        nameText.text = "";
     }
     public bool visible()
     {

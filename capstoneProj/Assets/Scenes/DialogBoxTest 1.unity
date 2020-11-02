@@ -747,7 +747,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986957559}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -982,6 +982,101 @@ Transform:
   m_Father: {fileID: 1700066457}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &346721429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 346721430}
+  - component: {fileID: 346721433}
+  - component: {fileID: 346721432}
+  - component: {fileID: 346721431}
+  m_Layer: 5
+  m_Name: NameText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &346721430
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346721429}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1100909376}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1700, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &346721431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346721429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &346721432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346721429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 65
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 85
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &346721433
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346721429}
+  m_CullTransparentMesh: 0
 --- !u!1 &402924379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +1134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: Demo complete, press ESC to quit
   dialogue: []
 --- !u!1 &451813349
 GameObject:
@@ -1273,7 +1367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: Is that the light making it that color?
   dialogue:
   - {fileID: 548696868}
 --- !u!65 &548696865
@@ -1448,7 +1541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: What are they hiding from?
   dialogue:
   - {fileID: 583512658}
 --- !u!65 &583512655
@@ -2606,7 +2698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: Hmm it doesn't seem to be opening
   dialogue: []
 --- !u!65 &890713005
 BoxCollider:
@@ -2900,7 +2991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: Their eyes keep following me...
   dialogue:
   - {fileID: 933428348}
 --- !u!65 &933428345
@@ -3041,7 +3131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: There weren't this many fish here before...
   dialogue:
   - {fileID: 940308918}
 --- !u!65 &940308915
@@ -3310,6 +3399,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1100909376}
   - {fileID: 74781529}
   m_Father: {fileID: 814723544}
   m_RootOrder: 2
@@ -3317,7 +3407,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 1800, y: 100}
+  m_SizeDelta: {x: 1600, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &986957560
 MonoBehaviour:
@@ -3331,6 +3421,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffec646bc8b792d48998057ce4b82cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayText: {fileID: 74781531}
+  nameText: {fileID: 346721432}
+  nameWindow: {fileID: 1100909377}
 --- !u!114 &986957561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3591,6 +3684,82 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1100909375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100909376}
+  - component: {fileID: 1100909378}
+  - component: {fileID: 1100909377}
+  m_Layer: 5
+  m_Name: NameWindow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1100909376
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100909375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 346721430}
+  m_Father: {fileID: 986957559}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -624.2, y: 97.100006}
+  m_SizeDelta: {x: 350, y: 100}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1100909377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100909375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1100909378
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100909375}
+  m_CullTransparentMesh: 0
 --- !u!114 &1113695397 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7358390004601796778, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
@@ -4942,7 +5111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: Did they always have teeth like that?
   dialogue:
   - {fileID: 1492885564}
 --- !u!65 &1492885561
@@ -5083,7 +5251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: It's too dark...
   dialogue:
   - {fileID: 1519579246}
 --- !u!65 &1519579243
@@ -5671,7 +5838,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueOnInteract: Where did they all go?
   dialogue:
   - {fileID: 1682609632}
 --- !u!65 &1682609629
