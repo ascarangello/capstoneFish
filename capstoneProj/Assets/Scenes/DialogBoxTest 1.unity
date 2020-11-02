@@ -1040,6 +1040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Demo complete, press ESC to quit
+  dialogue: []
 --- !u!1 &451813349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1226,7 @@ GameObject:
   - component: {fileID: 548696865}
   - component: {fileID: 548696864}
   - component: {fileID: 548696863}
+  - component: {fileID: 548696868}
   m_Layer: 0
   m_Name: Three
   m_TagString: Untagged
@@ -1272,6 +1274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Is that the light making it that color?
+  dialogue:
+  - {fileID: 548696868}
 --- !u!65 &548696865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1334,6 +1338,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548696861}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &548696868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548696861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Name
+  sentences:
+  - Is that the light making it that color?
 --- !u!1 &578290102 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7358390005148157520, guid: d4e7fd6b3fb7e6942a136622a2fe33b2, type: 3}
@@ -1382,6 +1401,7 @@ GameObject:
   - component: {fileID: 583512655}
   - component: {fileID: 583512654}
   - component: {fileID: 583512653}
+  - component: {fileID: 583512658}
   m_Layer: 0
   m_Name: Two
   m_TagString: Untagged
@@ -1429,6 +1449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: What are they hiding from?
+  dialogue:
+  - {fileID: 583512658}
 --- !u!65 &583512655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1491,6 +1513,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583512651}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &583512658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583512651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Name
+  sentences:
+  - What are they hiding from?
 --- !u!1 &601619706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,6 +2607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Hmm it doesn't seem to be opening
+  dialogue: []
 --- !u!65 &890713005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2815,6 +2853,7 @@ GameObject:
   - component: {fileID: 933428345}
   - component: {fileID: 933428344}
   - component: {fileID: 933428343}
+  - component: {fileID: 933428348}
   m_Layer: 0
   m_Name: Five
   m_TagString: Untagged
@@ -2862,6 +2901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Their eyes keep following me...
+  dialogue:
+  - {fileID: 933428348}
 --- !u!65 &933428345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2924,6 +2965,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933428341}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &933428348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933428341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Name
+  sentences:
+  - Their eyes keep following me...
 --- !u!1 &940308911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,6 +2994,7 @@ GameObject:
   - component: {fileID: 940308915}
   - component: {fileID: 940308914}
   - component: {fileID: 940308913}
+  - component: {fileID: 940308918}
   m_Layer: 0
   m_Name: Four
   m_TagString: Untagged
@@ -2985,6 +3042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: There weren't this many fish here before...
+  dialogue:
+  - {fileID: 940308918}
 --- !u!65 &940308915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3047,6 +3106,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940308911}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &940308918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940308911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Name
+  sentences:
+  - There weren't this many fish here before...
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4821,6 +4895,7 @@ GameObject:
   - component: {fileID: 1492885561}
   - component: {fileID: 1492885560}
   - component: {fileID: 1492885559}
+  - component: {fileID: 1492885564}
   m_Layer: 0
   m_Name: Bad
   m_TagString: Untagged
@@ -4868,6 +4943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Did they always have teeth like that?
+  dialogue:
+  - {fileID: 1492885564}
 --- !u!65 &1492885561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4930,6 +5007,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492885557}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1492885564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492885557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Name
+  sentences:
+  - Did they always have teeth like that?
 --- !u!1 &1519579239
 GameObject:
   m_ObjectHideFlags: 0
@@ -4942,8 +5034,9 @@ GameObject:
   - component: {fileID: 1519579245}
   - component: {fileID: 1519579244}
   - component: {fileID: 1519579243}
-  - component: {fileID: 1519579242}
   - component: {fileID: 1519579241}
+  - component: {fileID: 1519579242}
+  - component: {fileID: 1519579246}
   m_Layer: 0
   m_Name: One
   m_TagString: Untagged
@@ -4991,6 +5084,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: It's too dark...
+  dialogue:
+  - {fileID: 1519579246}
 --- !u!65 &1519579243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5053,6 +5148,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519579239}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1519579246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519579239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Name
+  sentences:
+  - It's too dark...
 --- !u!1 &1558716697
 GameObject:
   m_ObjectHideFlags: 0
@@ -5514,6 +5624,7 @@ GameObject:
   - component: {fileID: 1682609629}
   - component: {fileID: 1682609628}
   - component: {fileID: 1682609627}
+  - component: {fileID: 1682609632}
   m_Layer: 0
   m_Name: Six
   m_TagString: Untagged
@@ -5561,6 +5672,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueOnInteract: Where did they all go?
+  dialogue:
+  - {fileID: 1682609632}
 --- !u!65 &1682609629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5623,6 +5736,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682609625}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1682609632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682609625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Name
+  sentences:
+  - Where did they all go?
 --- !u!1 &1688139676
 GameObject:
   m_ObjectHideFlags: 0
