@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DialogBoxTest 1.unity
+    path: Assets/Scenes/GreyBoxing_1.unity
     guid: c5e3de54f0018b34ca70ba61147c694a
   m_configObjects: {}
