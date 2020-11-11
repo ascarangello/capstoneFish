@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class DialoguePopup : MonoBehaviour
 {
-    public string dialogueOnInteract;
+
+    [SerializeField]
+    public DialogueInfo[] dialogue;
+
     private DialoguePopupManager dmanager;
     private bool playerPresence;
     // Start is called before the first frame update
@@ -18,7 +21,7 @@ public class DialoguePopup : MonoBehaviour
     {
         if (playerPresence && Input.GetButtonDown("Interact") && dmanager.visible())
         {
-            dmanager.hide();
+            dmanager.displayDialogue();
         }
     }
 
@@ -27,8 +30,7 @@ public class DialoguePopup : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             playerPresence = true;
-            dmanager.setText(dialogueOnInteract);
-            dmanager.show();
+            dmanager.startDialogue(dialogue);
         }
     }
 
