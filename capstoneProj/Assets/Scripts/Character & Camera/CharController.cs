@@ -37,7 +37,6 @@ public class CharController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
-
     public void killed()
     {
         dead = true;
