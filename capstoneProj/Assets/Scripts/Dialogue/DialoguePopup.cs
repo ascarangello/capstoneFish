@@ -7,14 +7,14 @@ public class DialoguePopup : MonoBehaviour
 
     [SerializeField]
     public DialogueInfo[] dialogue;
-
-    private DialoguePopupManager dmanager;
+    public DialoguePopupManager dmanager;
     private bool playerPresence;
     // Start is called before the first frame update
     void Start()
     {
-        dmanager = GameObject.FindGameObjectWithTag("DPopup").GetComponent<DialoguePopupManager>();
     }
+
+    
 
     // Update is called once per frame
     void Update()
