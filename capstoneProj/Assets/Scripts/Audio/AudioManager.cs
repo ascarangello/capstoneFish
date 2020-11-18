@@ -11,7 +11,6 @@ public class AudioManager : MonoBehaviour
     [Header("SFX Audio")]
     public AudioSource SFXSource;
     public AudioClip clickClip;
-    public AudioClip locksoundClip;
     public AudioClip flickerClip;
 
     [Header("Audio Delay")]
@@ -22,7 +21,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // StartCoroutine(RampUpBackground());
+        StartCoroutine(RampUpBackground());
         StartCoroutine(RandomFlicker());
     }
 
@@ -30,29 +29,14 @@ public class AudioManager : MonoBehaviour
     {
         return Random.Range(minDelay, maxDelay);
     }
-
+    
     public void StopSounds()
     {
         backgroundSource.Stop();
         StopAllCoroutines();
         StartCoroutine(RandomFlicker());
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            SFXSource.PlayOneShot(locksoundClip, .7f);
-
-            Invoke("StartBackground", .5f);
-        }
-    }
-
-    void StartBackground()
-    {
-        StartCoroutine(RampUpBackground());
-    }
-
+    
     //plays on toggle
     public void PlayClickSFX()
     {
@@ -122,8 +106,8 @@ public class AudioManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(.75f);
 
         StartCoroutine(StopBackground());
-    }
-
+    }   
+    
     IEnumerator StopBackground()
     {
         if (backgroundSource.volume > 0f)

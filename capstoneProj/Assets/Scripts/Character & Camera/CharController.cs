@@ -12,10 +12,6 @@ public class CharController : MonoBehaviour
     private GameObject inContactWith;
 
     private Vector3 forward, right, prevPos;
-
-    [Header("SFX Audio")]
-    public AudioSource SFXSource;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,11 +27,6 @@ public class CharController : MonoBehaviour
             Move();
             prevPos = transform.position;
         }
-        else
-        {
-            SFXSource.Stop();
-        }
-
         if (Input.GetKey("escape"))
         {
             Debug.Log("Escape hit, quitting");
@@ -78,8 +69,5 @@ public class CharController : MonoBehaviour
         transform.position += forwardMov;
         Camera.main.transform.position += transform.position - prevPos;
 
-        //footsteps
-        if (!SFXSource.isPlaying)
-            SFXSource.Play();
     }
 }

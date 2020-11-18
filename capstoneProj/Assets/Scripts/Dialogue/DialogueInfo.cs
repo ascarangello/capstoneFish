@@ -7,7 +7,6 @@ public class DialogueInfo : MonoBehaviour
 {
     // Start is called before the first frame update
     public string talking;
-
     [SerializeField]
     public string[] sentences;
     public Queue<string> sentenceQueue;
