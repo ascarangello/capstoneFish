@@ -5,13 +5,14 @@ using UnityEngine;
 public class DialoguePopup : MonoBehaviour
 {
 
-    [SerializeField]
-    public DialogueInfo[] dialogue;
+  
+    private DialogueInfo[] dialogue;
     public DialoguePopupManager dmanager;
     private bool playerPresence;
     // Start is called before the first frame update
     void Start()
     {
+        dialogue = GetComponents<DialogueInfo>();
     }
 
     
