@@ -3186,7 +3186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking: MC
   sentences:
-  - Who are *you?*
+  - Who are <i>you?</i>
 --- !u!114 &269105669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3202,7 +3202,6 @@ MonoBehaviour:
   talking: ???
   sentences:
   - ...
-  - The control room might help, if you can find it that is.
 --- !u!114 &269105670
 MonoBehaviour:
   m_ObjectHideFlags: 0
