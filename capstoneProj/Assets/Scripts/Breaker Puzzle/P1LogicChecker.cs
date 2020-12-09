@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class P1LogicChecker : MonoBehaviour
 {
     [SerializeField]
+    public GameObject enableOnWin;
     public GameObject disableOnWin;
     public List<Toggle> onToggles;
     public List<Toggle> offToggles;
@@ -28,6 +29,7 @@ public class P1LogicChecker : MonoBehaviour
         }
 
         disableOnWin.SetActive(false);
+        enableOnWin.SetActive(true);
         tockSound.StopSounds();
         return true;
     }
