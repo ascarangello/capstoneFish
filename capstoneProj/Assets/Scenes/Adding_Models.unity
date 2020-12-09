@@ -4403,7 +4403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking: MC
   sentences:
-  - And I would love to be at home with my cat, but SOMEONE LOCKED THE DOOR.
+  - And I would <i>love</i> to be at home with my cat.
+  - But SOMEONE LOCKED THE DOOR.
 --- !u!1 &342472226
 GameObject:
   m_ObjectHideFlags: 0
@@ -14150,7 +14151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205641836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -120.40001, y: 1.4, z: -2.199997}
+  m_LocalPosition: {x: -120.4, y: 1.6, z: -2.199997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1143354862}
@@ -16044,6 +16045,7 @@ GameObject:
   - component: {fileID: 1407422060}
   - component: {fileID: 1407422063}
   - component: {fileID: 1407422064}
+  - component: {fileID: 1407422067}
   - component: {fileID: 1407422065}
   - component: {fileID: 1407422066}
   m_Layer: 0
@@ -16187,7 +16189,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking: MC
   sentences:
-  - Who is that?
+  - Who was that?
+  - Should I be worried?
+--- !u!114 &1407422067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407422058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - The lights? Really?
 --- !u!1 &1409231773
 GameObject:
   m_ObjectHideFlags: 0
@@ -18855,7 +18873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking: Manager
   sentences:
-  - "Good to hear. Just *make sure* you\u2019ll be out by 10:30"
+  - "Good to hear. Just <i>make sure</i> you\u2019ll be out by 10:30"
 --- !u!114 &1665355979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18870,7 +18888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking: Manager
   sentences:
-  - "Listen kid, I know you\u2019re new so you don\u2019t *know* but-"
+  - "Listen kid, I know you\u2019re new so you don\u2019t <i>know</i> but-"
 --- !u!114 &1665355980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19024,7 +19042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talking: 
   sentences:
-  - '*Hangs up phone*'
+  - <i>Hangs up phone</i>
 --- !u!1 &1669779176
 GameObject:
   m_ObjectHideFlags: 0
