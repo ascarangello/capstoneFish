@@ -31,13 +31,13 @@ public class Teleporter : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             GameObject player = other.gameObject;
-            CharController playerController = player.GetComponent<CharController>();
+            FirstPersonMovement playerController = player.GetComponent<FirstPersonMovement>();
             playerController.enabled = false;
             player.transform.position = exitSpot.position;
             StartCoroutine(movementEnable(playerController));
         }
     }
-    IEnumerator movementEnable(CharController controller)
+    IEnumerator movementEnable(FirstPersonMovement controller)
     {
         yield return new WaitForEndOfFrame(); 
         controller.enabled = true; 
