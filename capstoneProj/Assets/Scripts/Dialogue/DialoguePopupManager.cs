@@ -7,13 +7,16 @@ public class DialoguePopupManager : MonoBehaviour
 {
     public Text displayText;
     public Text nameText;
+    public GameObject playerRef;
     private Queue<DialogueInfo> GlobalDialogue;
     public Image nameWindow;
     private DialogueInfo currentDialogue;
     private Image background;
+    private FirstPersonMovement movement;
     // Start is called before the first frame update
     void Start()
     {
+        movement = playerRef.GetComponent<FirstPersonMovement>();
         GlobalDialogue = new Queue<DialogueInfo>();
         background = GetComponent<Image>();
         if(background.IsActive())
@@ -25,13 +28,17 @@ public class DialoguePopupManager : MonoBehaviour
         nameText.text = "";
     }
 
-    public void startDialogue(DialogueInfo[] dialogue)
+    public void startDialogue(DialogueInfo[] dialogue, bool lockPlayer)
     {
         currentDialogue = null;
         GlobalDialogue.Clear();
         foreach (DialogueInfo currDialogue in dialogue)
         {
             GlobalDialogue.Enqueue(currDialogue);
+        }
+        if(lockPlayer)
+        {
+            movement.enabled = false;
         }
         nextDialogue();
 
@@ -93,6 +100,10 @@ public class DialoguePopupManager : MonoBehaviour
     }
     public void hide()
     {
+        if(!movement.enabled)
+        {
+            movement.enabled = true;
+        }
         background.enabled = false;
         nameWindow.enabled = false;
         displayText.text = "";

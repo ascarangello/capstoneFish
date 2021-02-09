@@ -1705,6 +1705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &134547128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2306,6 +2308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &185347892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3033,6 +3037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &269105660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4265,6 +4271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &337929718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4920,6 +4928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &396627283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6282,6 +6292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &489751914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6868,6 +6880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 0}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &548696865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7300,6 +7314,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 0}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &583512655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7873,6 +7889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &612821866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8250,6 +8268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &653764010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10331,6 +10351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 0}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &890713005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10458,6 +10480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &891564959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11200,6 +11224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 0}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &933428345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11397,6 +11423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 0}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &940308915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11664,6 +11692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: {fileID: 74781531}
   nameText: {fileID: 266705491}
+  playerRef: {fileID: 1779718195328859}
   nameWindow: {fileID: 852399832}
 --- !u!114 &986957561
 MonoBehaviour:
@@ -11815,6 +11844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &1018621213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13476,6 +13507,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &1170120693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13568,6 +13601,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1176266225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13845,6 +13880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1201632312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14744,6 +14781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &1241019513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15818,6 +15857,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1380397208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16006,6 +16047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 1
+  occurOnce: 1
 --- !u!114 &1407422065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16429,6 +16472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1451180667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16569,6 +16614,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1469884685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16692,6 +16739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 0}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1492885561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16898,6 +16947,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1506513178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17026,6 +17077,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 0}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1519579243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17723,6 +17776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &1578380486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18693,6 +18748,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 1
+  occurOnce: 1
 --- !u!114 &1665355977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19198,6 +19255,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 0}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!65 &1682609629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19940,6 +19999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &1727349894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22449,6 +22510,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &1879704685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22855,6 +22918,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &1961192404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23187,6 +23252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &1985701048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23869,6 +23936,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &2044833513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24748,6 +24817,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &2090213523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25381,6 +25452,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
+  lockPlayer: 0
+  occurOnce: 0
 --- !u!114 &2124011635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26235,7 +26308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2124254920683242377, guid: b902bb2048e33614db21e246cbc4a28e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.5917
+      value: -5.96
       objectReference: {fileID: 0}
     - target: {fileID: 2124254920683242377, guid: b902bb2048e33614db21e246cbc4a28e, type: 3}
       propertyPath: m_LocalRotation.x
