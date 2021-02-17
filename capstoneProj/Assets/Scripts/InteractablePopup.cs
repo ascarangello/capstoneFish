@@ -5,13 +5,18 @@ using UnityEngine;
 public class InteractablePopup : MonoBehaviour
 {
     public GameObject onInteract;
+    public GameObject playerRef;
     private PopupManager popup;
     private bool playerPresence;
     public string displayText;
+    private FirstPersonLook look;
+    private FirstPersonMovement move;
     // Start is called before the first frame update
     void Start()
     {
         popup = GameObject.FindGameObjectWithTag("Popup").GetComponent<PopupManager>();
+        look = playerRef.GetComponentInChildren<FirstPersonLook>();
+        move = playerRef.GetComponent<FirstPersonMovement>();
     }
 
     // Update is called once per frame
@@ -21,6 +26,10 @@ public class InteractablePopup : MonoBehaviour
         {
             popup.clearText();
             onInteract.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            look.enabled = false;
+            move.enabled = false;
         }
     }
 
@@ -42,6 +51,8 @@ public class InteractablePopup : MonoBehaviour
             if (onInteract.activeSelf)
             {
                 onInteract.SetActive(false);
+                Cursor.visible = false;
+
             }
         }
     }

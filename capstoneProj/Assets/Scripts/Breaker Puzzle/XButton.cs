@@ -6,12 +6,16 @@ public class XButton : MonoBehaviour
 {
     public GameObject toBeClosed;
     private Button button;
+    public GameObject playerRef;
+    private FirstPersonLook look;
+    private FirstPersonMovement move;
     // Start is called before the first frame update
     void Start()
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(closeWindow);
-        
+        look = playerRef.GetComponentInChildren<FirstPersonLook>();
+        move = playerRef.GetComponent<FirstPersonMovement>();
     }
 
     // Update is called once per frame
@@ -25,6 +29,10 @@ public class XButton : MonoBehaviour
         if(toBeClosed.activeSelf)
         {
             toBeClosed.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            look.enabled = true;
+            move.enabled = true;
         }
     }
 }

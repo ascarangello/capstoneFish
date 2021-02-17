@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class DialoguePopup : MonoBehaviour
 {
-
-  
     private DialogueInfo[] dialogue;
     public DialoguePopupManager dmanager;
+    public bool lockPlayer;
+    public bool occurOnce;
     private bool playerPresence;
+    private bool dialogueDone = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +29,14 @@ public class DialoguePopup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if ((!occurOnce || (occurOnce && !dialogueDone)) && other.gameObject.CompareTag("Player"))
         {
             playerPresence = true;
-            dmanager.startDialogue(dialogue);
+            dmanager.startDialogue(dialogue, lockPlayer);
+            if(occurOnce && !dialogueDone)
+            {
+                dialogueDone = true;
+            }
         }
     }
 
