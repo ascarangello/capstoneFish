@@ -8,8 +8,8 @@ public class FirstPersonLook : MonoBehaviour
     Vector2 appliedMouseDelta;
     public float sensitivity = 1;
     public float smoothing = 2;
-
-
+    public Light flashlight;
+    private bool trigger;
     void Reset()
     {
         character = GetComponentInParent<FirstPersonMovement>().transform;
@@ -19,6 +19,7 @@ public class FirstPersonLook : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        trigger = false;
     }
 
     void Update()
@@ -32,5 +33,19 @@ public class FirstPersonLook : MonoBehaviour
         // Rotate camera and controller.
         transform.localRotation = Quaternion.AngleAxis(-currentMouseLook.y, Vector3.right);
         character.localRotation = Quaternion.AngleAxis(currentMouseLook.x, Vector3.up);
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            trigger = true;
+        }
+
+    }
+
+    private void FixedUpdate()
+    {
+        if(trigger)
+        {
+            flashlight.enabled = !flashlight.enabled;
+            trigger = false;
+        }
     }
 }

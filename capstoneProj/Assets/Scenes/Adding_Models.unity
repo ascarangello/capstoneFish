@@ -3038,7 +3038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dmanager: {fileID: 986957560}
   lockPlayer: 0
-  occurOnce: 0
+  occurOnce: 1
 --- !u!65 &269105660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26300,7 +26300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2124254920683242377, guid: b902bb2048e33614db21e246cbc4a28e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -124.066696
+      value: -131.1
       objectReference: {fileID: 0}
     - target: {fileID: 2124254920683242377, guid: b902bb2048e33614db21e246cbc4a28e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26308,7 +26308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2124254920683242377, guid: b902bb2048e33614db21e246cbc4a28e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.96
+      value: 11.48
       objectReference: {fileID: 0}
     - target: {fileID: 2124254920683242377, guid: b902bb2048e33614db21e246cbc4a28e, type: 3}
       propertyPath: m_LocalRotation.x
