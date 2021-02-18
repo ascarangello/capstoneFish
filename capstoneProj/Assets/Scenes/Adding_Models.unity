@@ -2902,261 +2902,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266705488}
   m_CullTransparentMesh: 0
---- !u!1 &269105656
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 269105657}
-  - component: {fileID: 269105662}
-  - component: {fileID: 269105661}
-  - component: {fileID: 269105660}
-  - component: {fileID: 269105659}
-  - component: {fileID: 269105658}
-  - component: {fileID: 269105664}
-  - component: {fileID: 269105663}
-  - component: {fileID: 269105667}
-  - component: {fileID: 269105666}
-  - component: {fileID: 269105665}
-  - component: {fileID: 269105668}
-  - component: {fileID: 269105669}
-  - component: {fileID: 269105670}
-  m_Layer: 0
-  m_Name: Locked Door (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &269105657
+--- !u!4 &269105657 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+  m_PrefabInstance: {fileID: 8701747468575769509}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.224, y: -5.43, z: 54.9}
-  m_LocalScale: {x: 10.832445, y: 0.13208023, z: 6.6872463}
-  m_Children: []
-  m_Father: {fileID: 438275748}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &269105658
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0039154, y: 11.858149, z: 1.0000004}
-  m_Center: {x: -0.0019597854, y: 5.429075, z: 0}
---- !u!114 &269105659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmanager: {fileID: 986957560}
-  lockPlayer: 0
-  occurOnce: 1
---- !u!65 &269105660
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &269105661
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f956e614012b78a408640d01d8eca030, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &269105662
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &269105663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - What in the HELL was that???
-  - This ISN'T funny anymore!
---- !u!114 &269105664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2692465a06aaa478e23f6ecbcaf6a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obj: {fileID: 1722279397}
---- !u!114 &269105665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: ???
-  sentences:
-  - ...
-  - 'You''ll find out soon enough. This room is pretty dark. Might wanna get your
-    sight back. '
-  - Who knows what lies in the dark?
---- !u!114 &269105666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - And who is this "us" huh?
---- !u!114 &269105667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: ???
-  sentences:
-  - I told you, the doors lock to keep us in.
---- !u!114 &269105668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - Who are <i>you?</i>
---- !u!114 &269105669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: ???
-  sentences:
-  - ...
---- !u!114 &269105670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269105656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: 
-  sentences:
-  - Demo complete! Press escape to quit
 --- !u!65 &271058107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16018,183 +15768,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380397203}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1407422058
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1407422059}
-  - component: {fileID: 1407422062}
-  - component: {fileID: 1407422061}
-  - component: {fileID: 1407422060}
-  - component: {fileID: 1407422063}
-  - component: {fileID: 1407422064}
-  - component: {fileID: 1407422067}
-  - component: {fileID: 1407422065}
-  - component: {fileID: 1407422066}
-  m_Layer: 0
-  m_Name: LIGHTSOFFDIALOGUETRIGGER
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
-  m_IsActive: 1
---- !u!4 &1407422059
+--- !u!4 &1407422059 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+  m_PrefabInstance: {fileID: 1656213727378297927}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -72.23, y: 0.27, z: 13.64}
-  m_LocalScale: {x: 3.072539, y: 2.0367, z: 22.948946}
-  m_Children: []
-  m_Father: {fileID: 1688139677}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1407422060
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.2948773, y: 1.9425257, z: 1}
-  m_Center: {x: -0.14813602, y: 0.47126397, z: 0}
---- !u!23 &1407422061
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 16c7574ded9d7b6478742630a3652d39, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1407422062
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1407422063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2692465a06aaa478e23f6ecbcaf6a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obj: {fileID: 705507993}
---- !u!114 &1407422064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmanager: {fileID: 986957560}
-  lockPlayer: 1
-  occurOnce: 1
---- !u!114 &1407422065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: ???
-  sentences:
-  - "Can\u2019t see very well can you? "
-  - 'Might wanna get your sight back. '
-  - Who knows what lies in the dark?
-  - 'The control room might help, if you can find it that is. '
---- !u!114 &1407422066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - Who was that?
-  - Should I be worried?
---- !u!114 &1407422067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407422058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - The lights? Really?
 --- !u!1 &1409231773
 GameObject:
   m_ObjectHideFlags: 0
@@ -18677,376 +18255,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4204dd2e4e4f89b4ca9836e319bfdacd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1665355968
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1665355969}
-  - component: {fileID: 1665355973}
-  - component: {fileID: 1665355972}
-  - component: {fileID: 1665355971}
-  - component: {fileID: 1665355970}
-  - component: {fileID: 1665355976}
-  - component: {fileID: 1665355975}
-  - component: {fileID: 1665355974}
-  - component: {fileID: 1665355977}
-  - component: {fileID: 1665355978}
-  - component: {fileID: 1665355980}
-  - component: {fileID: 1665355979}
-  - component: {fileID: 1665355981}
-  - component: {fileID: 1665355982}
-  - component: {fileID: 1665355983}
-  - component: {fileID: 1665355985}
-  - component: {fileID: 1665355984}
-  - component: {fileID: 1665355986}
-  - component: {fileID: 1665355987}
-  - component: {fileID: 1665355989}
-  - component: {fileID: 1665355988}
-  m_Layer: 0
-  m_Name: Locked Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
-  m_IsActive: 1
---- !u!4 &1665355969
+--- !u!4 &1665355969 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+  m_PrefabInstance: {fileID: 5913836426220786247}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 122.1, y: 0, z: 10.1}
-  m_LocalScale: {x: 11.104607, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2006247713}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1665355970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 595afdf9523057f4fbf0823d6382234f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  p1: {fileID: 1144344581}
-  scaryFish: {fileID: 1722279397}
---- !u!65 &1665355971
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2.9134693, z: 2.0312023}
-  m_Center: {x: -0, y: 0.95673466, z: -0.51560116}
---- !u!23 &1665355972
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: f956e614012b78a408640d01d8eca030, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1665355973
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1665355974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: Manager
-  sentences:
-  - "MC, can you hear me? I\u2019m heading out for the night."
-  - " Make sure you\u2019re out by 10:30 and not a second later."
---- !u!65 &1665355975
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2.1934204, z: 6.1000214}
-  m_Center: {x: -0, y: 0.5967102, z: -4.7933893}
---- !u!114 &1665355976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmanager: {fileID: 986957560}
-  lockPlayer: 1
-  occurOnce: 1
---- !u!114 &1665355977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - I only have a few things left to do.
-  - I should be out before then.
---- !u!114 &1665355978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: Manager
-  sentences:
-  - "Good to hear. Just <i>make sure</i> you\u2019ll be out by 10:30"
---- !u!114 &1665355979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: Manager
-  sentences:
-  - "Listen kid, I know you\u2019re new so you don\u2019t <i>know</i> but-"
---- !u!114 &1665355980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - Yeah, Henry, heard ya the first time.
---- !u!114 &1665355981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - "Let me guess, union rules say I can\u2019t stay after 10:30?"
-  - Not without overtime at least?
---- !u!114 &1665355982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: Manager
-  sentences:
-  - ...
-  - Well yes, but also-
---- !u!114 &1665355983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - Or is this like a Night at the Museum kinda deal?
---- !u!114 &1665355984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - ...
---- !u!114 &1665355985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: Manager
-  sentences:
-  - ...
---- !u!114 &1665355986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: Manager
-  sentences:
-  - Just be out by 10:30.
-  - I'll see you in the morning.
---- !u!114 &1665355987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - Heard ya the first time, Henry. See you in the morning.
---- !u!114 &1665355988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: MC
-  sentences:
-  - Okay all I need to do is wrap up.
-  - Then I can head out the top left exit.
---- !u!114 &1665355989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665355968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: 
-  sentences:
-  - <i>Hangs up phone</i>
 --- !u!1 &1669779176
 GameObject:
   m_ObjectHideFlags: 0
@@ -26023,6 +25236,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f77641ed426007146b74f7f98b6cac27, type: 3}
+--- !u!1001 &1656213727378297927
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1688139677}
+    m_Modifications:
+    - target: {fileID: 1656213728768678440, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 705507993}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -72.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678445, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: m_Name
+      value: LIGHTSOFFDIALOGUETRIGGER
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656213728768678455, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
+      propertyPath: dmanager
+      value: 
+      objectReference: {fileID: 986957560}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
 --- !u!23 &1711813854573711213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26617,6 +25895,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b2ce449e6adc9940a81890bc37eca2a, type: 3}
+--- !u!1001 &5913836426220786247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2006247713}
+    m_Modifications:
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 122.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707910, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707911, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: m_Name
+      value: StartingDemoDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913836427885707919, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+      propertyPath: dmanager
+      value: 
+      objectReference: {fileID: 986957560}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
 --- !u!1001 &7139594836238446013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26679,6 +26018,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7196201588550468643, guid: f77641ed426007146b74f7f98b6cac27, type: 3}
   m_PrefabInstance: {fileID: 935239580685641115}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8701747468575769509
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 438275748}
+    m_Modifications:
+    - target: {fileID: 8701747468843825573, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 1722279397}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.224
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 54.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825756, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825757, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: m_Name
+      value: DEMO END TRIGGER
+      objectReference: {fileID: 0}
+    - target: {fileID: 8701747468843825758, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
+      propertyPath: dmanager
+      value: 
+      objectReference: {fileID: 986957560}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8befaa4abc9cb04f8c7295157745415, type: 3}
 --- !u!1001 &8814780922362273766
 PrefabInstance:
   m_ObjectHideFlags: 0
