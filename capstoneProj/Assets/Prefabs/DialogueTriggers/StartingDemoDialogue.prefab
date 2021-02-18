@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5913836427885707911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5913836427885707910}
+  - component: {fileID: 5913836427885707906}
+  - component: {fileID: 5913836427885707907}
+  - component: {fileID: 5913836427885707908}
+  - component: {fileID: 5913836427885707919}
+  - component: {fileID: 5913836427885707904}
+  - component: {fileID: 5913836427885707905}
+  - component: {fileID: 5913836427885707918}
+  - component: {fileID: 5913836427885707917}
+  - component: {fileID: 5913836427885707915}
+  - component: {fileID: 5913836427885707916}
+  - component: {fileID: 5913836427885707914}
+  - component: {fileID: 5913836427885707913}
+  - component: {fileID: 5913836427885707912}
+  - component: {fileID: 5913836427885707926}
+  - component: {fileID: 5913836427885707927}
+  - component: {fileID: 5913836427885707925}
+  - component: {fileID: 5913836427885707924}
+  - component: {fileID: 5913836427885707922}
+  - component: {fileID: 5913836427885707923}
+  m_Layer: 0
+  m_Name: StartingDemoDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &5913836427885707910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 122.1, y: 0, z: 10.1}
+  m_LocalScale: {x: 11.104607, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5913836427885707906
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5913836427885707907
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f956e614012b78a408640d01d8eca030, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5913836427885707908
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.9134693, z: 2.0312023}
+  m_Center: {x: -0, y: 0.95673466, z: -0.51560116}
+--- !u!114 &5913836427885707919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmanager: {fileID: 0}
+  lockPlayer: 1
+  occurOnce: 1
+--- !u!65 &5913836427885707904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2.1934204, z: 6.1000214}
+  m_Center: {x: -0, y: 0.5967102, z: -4.7933893}
+--- !u!114 &5913836427885707905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Manager
+  sentences:
+  - "MC, can you hear me? I\u2019m heading out for the night."
+  - " Make sure you\u2019re out by 10:30 and not a second later."
+--- !u!114 &5913836427885707918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - I only have a few things left to do.
+  - I should be out before then.
+--- !u!114 &5913836427885707917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Manager
+  sentences:
+  - "Good to hear. Just <i>make sure</i> you\u2019ll be out by 10:30"
+--- !u!114 &5913836427885707915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - Yeah, Henry, heard ya the first time.
+--- !u!114 &5913836427885707916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Manager
+  sentences:
+  - "Listen kid, I know you\u2019re new so you don\u2019t <i>know</i> but-"
+--- !u!114 &5913836427885707914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - "Let me guess, union rules say I can\u2019t stay after 10:30?"
+  - Not without overtime at least?
+--- !u!114 &5913836427885707913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Manager
+  sentences:
+  - ...
+  - Well yes, but also-
+--- !u!114 &5913836427885707912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - Or is this like a Night at the Museum kinda deal?
+--- !u!114 &5913836427885707926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Manager
+  sentences:
+  - ...
+--- !u!114 &5913836427885707927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - ...
+--- !u!114 &5913836427885707925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: Manager
+  sentences:
+  - Just be out by 10:30.
+  - I'll see you in the morning.
+--- !u!114 &5913836427885707924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - Heard ya the first time, Henry. See you in the morning.
+--- !u!114 &5913836427885707922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: 
+  sentences:
+  - <i>Hangs up phone</i>
+--- !u!114 &5913836427885707923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5913836427885707911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - Okay all I need to do is wrap up.
+  - Then I can head out the top left exit.
