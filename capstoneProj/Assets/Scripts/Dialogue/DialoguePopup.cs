@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialoguePopup : MonoBehaviour
 {
-    private DialogueInfo[] dialogue;
+    public DialogueInfo[] dialogue;
     public DialoguePopupManager dmanager;
     public bool lockPlayer;
     public bool occurOnce;
@@ -13,7 +13,6 @@ public class DialoguePopup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogue = GetComponents<DialogueInfo>();
     }
 
     
