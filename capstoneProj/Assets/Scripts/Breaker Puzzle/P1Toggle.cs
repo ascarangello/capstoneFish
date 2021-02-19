@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class P1Toggle : MonoBehaviour
 {
     //Light that the button controls
-    [SerializeField]
-    private LightFlicker light;
+    // [SerializeField]
+    // private LightFlicker light;
 
     //Color of the toggle
     [SerializeField]
@@ -27,7 +27,7 @@ public class P1Toggle : MonoBehaviour
     {
         toggle = GetComponent<Toggle>();
         changeColor();
-        CheckFlickering();
+        // CheckFlickering();
         toggle.onValueChanged.AddListener(delegate
         {
             updateSelf(this.name);
@@ -48,7 +48,7 @@ public class P1Toggle : MonoBehaviour
         {
             // Debug.Log("Told to update by: " + fromHash.ToString());
             changeColor();
-            CheckFlickering();
+            // CheckFlickering();
             
             if (lastButton == "")
             {
@@ -66,22 +66,23 @@ public class P1Toggle : MonoBehaviour
 
 
     //If the toggle is on stop the flickering, otherwise turn it back on
+    /*
     void CheckFlickering()
     {
 
-        if (light != null)
+        if (GetComponent<Light>() != null)
         {
             if (toggle.isOn)
             {
-                light.Stop();
+                GetComponent<Light>().Stop();
             }
             else
             {
-                light.Restart();
+                GetComponent<Light>().Restart();
             }
         }
     }
-
+    */
     private void changeColor()
     {
         ColorBlock newBlock = toggle.colors;
