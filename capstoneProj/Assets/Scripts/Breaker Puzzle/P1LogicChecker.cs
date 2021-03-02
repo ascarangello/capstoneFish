@@ -28,6 +28,14 @@ public class P1LogicChecker : MonoBehaviour
             }
         }
 
+        foreach (Toggle toggle in onToggles)
+        {
+            toggle.interactable = false;
+        }
+        foreach (Toggle toggle in offToggles)
+        {
+            toggle.interactable = false;
+        }
         disableOnWin.SetActive(false);
         enableOnWin.SetActive(true);
         tockSound.StopSounds();
