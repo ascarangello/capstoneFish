@@ -9,6 +9,7 @@ public class FirstPersonLook : MonoBehaviour
     public float sensitivity = 1;
     public float smoothing = 2;
     public Light flashlight;
+    private bool flashLightEquipped;
     private bool trigger;
     void Reset()
     {
@@ -20,6 +21,7 @@ public class FirstPersonLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         trigger = false;
+        disableFlashlight();
     }
 
     void Update()
@@ -42,10 +44,19 @@ public class FirstPersonLook : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(trigger)
+        if(trigger && flashLightEquipped)
         {
             flashlight.enabled = !flashlight.enabled;
             trigger = false;
         }
+    }
+
+    public void enableFlashlight()
+    {
+        flashLightEquipped = true;
+    }
+    public void disableFlashlight()
+    {
+        flashLightEquipped = false;
     }
 }

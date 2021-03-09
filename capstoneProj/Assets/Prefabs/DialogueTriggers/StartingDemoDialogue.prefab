@@ -64,7 +64,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5913836427885707911}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -123,6 +123,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+  - {fileID: 5913836427885707905}
+  - {fileID: 5913836427885707918}
+  - {fileID: 5913836427885707917}
+  - {fileID: 5913836427885707915}
+  - {fileID: 5913836427885707916}
+  - {fileID: 5913836427885707914}
+  - {fileID: 5913836427885707913}
+  - {fileID: 5913836427885707912}
+  - {fileID: 5913836427885707926}
+  - {fileID: 5913836427885707927}
+  - {fileID: 5913836427885707925}
+  - {fileID: 5913836427885707924}
+  - {fileID: 5913836427885707922}
+  - {fileID: 5913836427885707923}
   dmanager: {fileID: 0}
   lockPlayer: 1
   occurOnce: 1
