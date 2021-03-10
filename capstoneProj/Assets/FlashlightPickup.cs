@@ -22,6 +22,10 @@ public class FlashlightPickup : MonoBehaviour
         {
             popup.clearText();
             flashlightEnabler.enableFlashlight();
+            foreach(GameObject info in GameObject.FindGameObjectsWithTag("Info"))
+            {
+                info.GetComponent<infoStandScarySwap>().swapToScary();
+            }
             this.gameObject.SetActive(false);
         }
     }

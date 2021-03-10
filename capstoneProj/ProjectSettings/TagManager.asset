@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Popup
   - DPopup
+  - Info
   layers:
   - Default
   - TransparentFX
