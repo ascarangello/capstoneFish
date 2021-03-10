@@ -21,7 +21,7 @@ public class swapEnabledOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!once || !trigger)
+        if(other.gameObject.CompareTag("Player") && (!once || !trigger))
         {
             foreach (GameObject obj in swapped)
             {
