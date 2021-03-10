@@ -11,6 +11,7 @@ public class FirstPersonLook : MonoBehaviour
     public Light flashlight;
     private bool flashLightEquipped;
     private bool trigger;
+    private bool quit;
     void Reset()
     {
         character = GetComponentInParent<FirstPersonMovement>().transform;
@@ -21,6 +22,7 @@ public class FirstPersonLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         trigger = false;
+        quit = false;
         disableFlashlight();
     }
 
@@ -39,6 +41,10 @@ public class FirstPersonLook : MonoBehaviour
         {
             trigger = true;
         }
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            quit = true;
+        }
 
     }
 
@@ -48,6 +54,10 @@ public class FirstPersonLook : MonoBehaviour
         {
             flashlight.enabled = !flashlight.enabled;
             trigger = false;
+        }
+        if(quit)
+        {
+            Application.Quit();
         }
     }
 
