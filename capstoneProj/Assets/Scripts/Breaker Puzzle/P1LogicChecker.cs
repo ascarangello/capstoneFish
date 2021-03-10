@@ -36,9 +36,10 @@ public class P1LogicChecker : MonoBehaviour
         {
             toggle.interactable = false;
         }
-        disableOnWin.SetActive(false);
         enableOnWin.SetActive(true);
-        tockSound.StopSounds();
+        disableOnWin.SetActive(false);
+
+        // tockSound.StopSounds();
         return true;
     }
 }
