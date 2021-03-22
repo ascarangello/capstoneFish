@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/FPSFullScene.unity
+    path: Assets/Scenes/Archive/FPSFullScene.unity
     guid: 041d16117b42d68419e1f8aafc52dcf3
   - enabled: 1
     path: Assets/Scenes/Greyboxing_2.unity
