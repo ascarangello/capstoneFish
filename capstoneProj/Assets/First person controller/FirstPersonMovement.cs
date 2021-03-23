@@ -5,7 +5,6 @@ public class FirstPersonMovement : MonoBehaviour
     public float speed = 5;
     Vector2 velocity;
     Rigidbody rb;
-
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -15,9 +14,12 @@ public class FirstPersonMovement : MonoBehaviour
     {
         velocity.y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         velocity.x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        Vector3 mvmt = new Vector3(velocity.y, 0, velocity.x).normalized;
+        // Vector3 mvmt = new Vector3(velocity.y, 0, velocity.x).normalized;
         Transform nextStep = this.transform;
         nextStep.Translate(velocity.x, 0, velocity.y);
-        rb.MovePosition(nextStep.position);
+        rb.velocity = (nextStep.position - transform.position).normalized;
+
+        // rb.MovePosition(nextStep.position);
     }
+
 }
