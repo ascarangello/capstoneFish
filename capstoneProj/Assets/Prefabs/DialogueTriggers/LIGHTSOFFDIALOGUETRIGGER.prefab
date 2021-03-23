@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 1656213728768678441}
   - component: {fileID: 1656213728768678442}
   - component: {fileID: 1656213728768678443}
-  - component: {fileID: 1656213728768678440}
   - component: {fileID: 1656213728768678455}
   - component: {fileID: 1656213728768678452}
   - component: {fileID: 1656213728768678454}
   - component: {fileID: 1656213728768678453}
+  - component: {fileID: 5176548469515943327}
   m_Layer: 0
   m_Name: LIGHTSOFFDIALOGUETRIGGER
   m_TagString: Untagged
@@ -100,19 +100,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2948773, y: 1.9425257, z: 1}
   m_Center: {x: -0.14813602, y: 0.47126397, z: 0}
---- !u!114 &1656213728768678440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656213728768678445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2692465a06aaa478e23f6ecbcaf6a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obj: {fileID: 0}
 --- !u!114 &1656213728768678455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: []
   dmanager: {fileID: 0}
   lockPlayer: 1
   occurOnce: 1
@@ -177,3 +165,17 @@ MonoBehaviour:
   sentences:
   - Who was that?
   - Should I be worried?
+--- !u!114 &5176548469515943327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656213728768678445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd80cc22d22244885cc259bdaa7225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swapped: []
+  once: 0
