@@ -298,6 +298,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24333521}
   m_CullTransparentMesh: 0
+--- !u!1 &26456986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5913836427885707911, guid: 04117f4171f213943ae82413e6ae7362, type: 3}
+  m_PrefabInstance: {fileID: 35037266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &26456987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26456986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a90dc467c3b54e2e9ee572b612d839d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newObjective: FINALLY time to head home
+  objWindow: {fileID: 670315001}
 --- !u!1001 &35037266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -499,7 +518,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &54483864
 Transform:
   m_ObjectHideFlags: 0
@@ -2184,6 +2203,35 @@ MonoBehaviour:
   talking: MC
   sentences:
   - Up yours buddy
+--- !u!114 &665828077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665828073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a90dc467c3b54e2e9ee572b612d839d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newObjective: Take the LONG way out
+  objWindow: {fileID: 670315001}
+--- !u!114 &665828078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665828073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd80cc22d22244885cc259bdaa7225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swapped:
+  - {fileID: 8707864822992880977}
+  once: 1
 --- !u!1 &667587724 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1056671452603293158, guid: 9a60875e6a4d8e34bbd95e244d13826f, type: 3}
@@ -2401,6 +2449,20 @@ MonoBehaviour:
   swapped:
   - {fileID: 317985589}
   once: 1
+--- !u!114 &728869242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728869234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a90dc467c3b54e2e9ee572b612d839d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newObjective: Grab the office flashlight
+  objWindow: {fileID: 670315001}
 --- !u!4 &728869247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1656213728768678444, guid: a62462f344532504b9507eb6109a0a9c, type: 3}
@@ -2692,6 +2754,7 @@ Transform:
   - {fileID: 728869247}
   - {fileID: 1446219977}
   - {fileID: 665828071}
+  - {fileID: 8707864822992880976}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3396,7 +3459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1070571509
 Transform:
   m_ObjectHideFlags: 0
@@ -6475,7 +6538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1056671451161266004, guid: 9a60875e6a4d8e34bbd95e244d13826f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1056671451180281508, guid: 9a60875e6a4d8e34bbd95e244d13826f, type: 3}
       propertyPath: m_BoundingSphereOverride.x
@@ -6507,7 +6570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1056671451278906935, guid: 9a60875e6a4d8e34bbd95e244d13826f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1056671451283968325, guid: 9a60875e6a4d8e34bbd95e244d13826f, type: 3}
       propertyPath: m_Camera
@@ -9157,6 +9220,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1079406072}
     m_Modifications:
+    - target: {fileID: 6722848348719066716, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 35.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722848348719066716, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 129.95717
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722848348896562364, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 243
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722848348896562364, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 468.02362
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722848348896562364, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -68.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722848348896562364, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 123.51224
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722848348896562365, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_Text
+      value: FINALLY time to head home
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722848348896562365, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6722848348896562365, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6722848349130528250, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
       propertyPath: m_Name
       value: ObjectiveWindow
@@ -9247,3 +9346,150 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00e4ba21349854ceda4d14edc4ebf2b6, type: 3}
+--- !u!114 &8707864822992880968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707864822992880977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - What's that...?
+  - Did the damn kid's toy turn itself on?
+  - Again???
+  - God I better get a raise for this
+--- !u!114 &8707864822992880971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707864822992880977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - {fileID: 8707864822992880968}
+  dmanager: {fileID: 1079406071}
+  lockPlayer: 0
+  occurOnce: 1
+--- !u!4 &8707864822992880976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707864822992880977}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -35.4, y: 1.018351, z: 60.6}
+  m_LocalScale: {x: 3.072539, y: 2.0367, z: 22.948946}
+  m_Children: []
+  m_Father: {fileID: 823634386}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8707864822992880977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8707864822992880976}
+  - component: {fileID: 8707864822992880981}
+  - component: {fileID: 8707864822992880982}
+  - component: {fileID: 8707864822992880983}
+  - component: {fileID: 8707864822992880971}
+  - component: {fileID: 8707864822992880968}
+  - component: {fileID: 8707864822992880978}
+  m_Layer: 0
+  m_Name: Edu Room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 8
+  m_IsActive: 0
+--- !u!114 &8707864822992880978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707864822992880977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a90dc467c3b54e2e9ee572b612d839d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newObjective: Fix the stupid kid's machine AGAIN
+  objWindow: {fileID: 670315001}
+--- !u!33 &8707864822992880981
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707864822992880977}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8707864822992880982
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707864822992880977}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 16c7574ded9d7b6478742630a3652d39, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8707864822992880983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8707864822992880977}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.4517474, y: 1.9425257, z: 1.6054811}
+  m_Center: {x: 2.4303, y: 0.47126397, z: 0.3615535}
