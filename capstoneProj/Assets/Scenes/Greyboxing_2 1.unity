@@ -2569,10 +2569,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2821298807168649015, guid: e67d64854f7c1434bb66f7f898f01357, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2821298807295575233, guid: e67d64854f7c1434bb66f7f898f01357, type: 3}
       propertyPath: playerRef
       value: 
       objectReference: {fileID: 1590915105}
+    - target: {fileID: 2821298807295575247, guid: e67d64854f7c1434bb66f7f898f01357, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4699793080786266833, guid: e67d64854f7c1434bb66f7f898f01357, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
