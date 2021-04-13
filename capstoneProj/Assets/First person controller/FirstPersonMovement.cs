@@ -3,21 +3,20 @@
 public class FirstPersonMovement : MonoBehaviour
 {
     public float speed = 5;
-    Vector2 velocity;
-    Rigidbody rb;
+    private CharacterController controller;
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
     }
 
     void FixedUpdate()
     {
-        velocity.y = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-        velocity.x = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+        float z = Input.GetAxis("Vertical");
+        float x = Input.GetAxis("Horizontal");
         // Vector3 mvmt = new Vector3(velocity.y, 0, velocity.x).normalized;
-        Transform nextStep = this.transform;
-        nextStep.Translate(velocity.x, 0, velocity.y);
-        rb.velocity = (nextStep.position - transform.position).normalized;
+        Vector3 move = transform.right * x + transform.forward * z;
+        controller.Move(move * speed * Time.deltaTime);
+
 
         // rb.MovePosition(nextStep.position);
     }
