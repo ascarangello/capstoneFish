@@ -41,7 +41,7 @@ public class P1AngryFishLogic : MonoBehaviour
         if (collision.gameObject.transform == player)
         {
             popupText.setText(onLoseText);
-            player.GetComponent<CharController>().killed();
+            player.GetComponent<FirstPersonMovement>().enabled = false;
         }
 
     }

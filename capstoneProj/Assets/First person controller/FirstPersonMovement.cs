@@ -8,7 +8,6 @@ public class FirstPersonMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
     }
-
     void FixedUpdate()
     {
         float z = Input.GetAxis("Vertical");

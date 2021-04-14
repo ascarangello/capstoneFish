@@ -27,7 +27,6 @@ public class InteractablePopup : MonoBehaviour
             popup.clearText();
             onInteract.SetActive(true);
             look.enabled = false;
-            move.enabled = false;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
         }
