@@ -140,6 +140,12 @@ GameObject:
   - component: {fileID: 7969022}
   - component: {fileID: 7969021}
   - component: {fileID: 7969023}
+  - component: {fileID: 7969029}
+  - component: {fileID: 7969028}
+  - component: {fileID: 7969027}
+  - component: {fileID: 7969026}
+  - component: {fileID: 7969025}
+  - component: {fileID: 7969024}
   m_Layer: 0
   m_Name: TrapRoomTrigger
   m_TagString: Untagged
@@ -173,7 +179,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - {fileID: 7969029}
+  - {fileID: 7969028}
+  - {fileID: 7969027}
+  - {fileID: 7969026}
+  - {fileID: 7969025}
+  - {fileID: 7969024}
   dmanager: {fileID: 2821298808372095287}
   lockPlayer: 0
   occurOnce: 1
@@ -208,6 +220,96 @@ MonoBehaviour:
   - {fileID: 1842754181}
   - {fileID: 2005256670}
   once: 1
+--- !u!114 &7969024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - Huh?
+--- !u!114 &7969025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: ???
+  sentences:
+  - "Oh sure! But don\u2019t you want to go swimming first?"
+--- !u!114 &7969026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - Just let me go home
+--- !u!114 &7969027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: ???
+  sentences:
+  - So aggressive... but I get it.
+--- !u!114 &7969028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - Can it.
+--- !u!114 &7969029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7969019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: ???
+  sentences:
+  - Welcome!
 --- !u!1 &12591705 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1056671452081389209, guid: 9a60875e6a4d8e34bbd95e244d13826f, type: 3}
@@ -9341,6 +9443,10 @@ GameObject:
   - component: {fileID: 1209598270}
   - component: {fileID: 1209598269}
   - component: {fileID: 1209598268}
+  - component: {fileID: 1209598274}
+  - component: {fileID: 1209598273}
+  - component: {fileID: 1209598272}
+  - component: {fileID: 1209598271}
   m_Layer: 0
   m_Name: VALVEPUZZLEDONETRIGGER
   m_TagString: Untagged
@@ -9393,7 +9499,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - {fileID: 1209598274}
+  - {fileID: 1209598273}
+  - {fileID: 1209598272}
+  - {fileID: 1209598271}
   dmanager: {fileID: 2821298808372095287}
   lockPlayer: 1
   occurOnce: 1
@@ -9410,6 +9520,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 38.399044, y: 6.047616, z: 42.688965}
   m_Center: {x: 18.480951, y: 2.523808, z: 8.60112}
+--- !u!114 &1209598271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209598266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - ....
+--- !u!114 &1209598272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209598266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: ???
+  sentences:
+  - "Oh sure! But I can\u2019t make it easy on you. You know where the back exit
+    is don\u2019t you?"
+--- !u!114 &1209598273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209598266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - ...let me out.
+--- !u!114 &1209598274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209598266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: ???
+  sentences:
+  - "Oh wow, didn\u2019t expect you to make it through that one."
 --- !u!1 &1211446009 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1056671450851088072, guid: 9a60875e6a4d8e34bbd95e244d13826f, type: 3}
@@ -12486,7 +12657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.152
-  timeToFill: 50
+  timeToFill: 30
 --- !u!136 &1669176323
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14730,6 +14901,10 @@ GameObject:
   - component: {fileID: 1943379871}
   - component: {fileID: 1943379873}
   - component: {fileID: 1943379872}
+  - component: {fileID: 1943379877}
+  - component: {fileID: 1943379876}
+  - component: {fileID: 1943379875}
+  - component: {fileID: 1943379874}
   m_Layer: 0
   m_Name: BREAKERROOMPUZZLETRIGGER
   m_TagString: Untagged
@@ -14763,7 +14938,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 458fc710d72db7746a20aca9254ae349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - {fileID: 1943379877}
+  - {fileID: 1943379876}
+  - {fileID: 1943379875}
+  - {fileID: 1943379874}
   dmanager: {fileID: 2821298808372095287}
   lockPlayer: 1
   occurOnce: 1
@@ -14780,6 +14959,67 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 38.399044, y: 6.047616, z: 42.688965}
   m_Center: {x: 18.480951, y: 2.523808, z: 8.60112}
+--- !u!114 &1943379874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943379870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: ???
+  sentences:
+  - Hmmm, maybe! Good luck!
+--- !u!114 &1943379875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943379870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - ' Is that it?'
+--- !u!114 &1943379876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943379870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: ???
+  sentences:
+  - " Nothing in particular, we just need someone to fix the lights. They\u2019ve
+    been acting up a lot lately."
+--- !u!114 &1943379877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943379870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1425d2bacb3ef449891d0456a2e7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: MC
+  sentences:
+  - " I\u2019m here. What do you want."
 --- !u!1 &1947604150
 GameObject:
   m_ObjectHideFlags: 0
