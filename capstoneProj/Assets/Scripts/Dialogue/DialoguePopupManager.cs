@@ -38,7 +38,7 @@ public class DialoguePopupManager : MonoBehaviour
         }
         if(lockPlayer)
         {
-            movement.enabled = false;
+            movement.stop = true;
         }
         nextDialogue();
 
@@ -100,9 +100,9 @@ public class DialoguePopupManager : MonoBehaviour
     }
     public void hide()
     {
-        if(!movement.enabled)
+        if(movement.stop)
         {
-            movement.enabled = true;
+            movement.stop = false;
         }
         background.enabled = false;
         nameWindow.enabled = false;
