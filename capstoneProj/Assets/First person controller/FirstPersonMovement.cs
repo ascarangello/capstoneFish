@@ -19,8 +19,8 @@ public class FirstPersonMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        float z = Input.GetAxis("Vertical");
-        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
+        float x = Input.GetAxisRaw("Horizontal");
         // Vector3 mvmt = new Vector3(velocity.y, 0, velocity.x).normalized;
         Vector3 move = (transform.right * x + transform.forward * z).normalized;
         if(!stop)
